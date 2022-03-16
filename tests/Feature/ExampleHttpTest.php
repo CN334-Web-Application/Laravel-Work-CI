@@ -9,7 +9,7 @@ public function testUserCreationEndpointTest()
         'email' => $email,
         'password' => $password,
         'password_confirmation' => $password
-    ]); 
+    ]);
 
     $response
         ->assertStatus(201)
