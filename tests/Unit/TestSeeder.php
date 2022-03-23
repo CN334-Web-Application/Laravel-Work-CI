@@ -6,23 +6,20 @@ use PHPUnit\Framework\TestCase;
 use Illunminate\Support\Str;
 use Fake\Generator as Faker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use app\Models\User;
 
 class TestSeeder extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic unit test example.
      *
      * @return void
      */
-    public function testBasicExample()
+    public function run()
     {
-        // Run the DatabaseSeeder...
-        $this->seed();
-
-        // Run a specific seeder...
-        $this->seed(OrderStatusSeeder::class);
-
-        $response = $this->get('/');
+        User::create([
+            'name' => "Sara",
+            'id' => 10
+        ]);
     }
 }
