@@ -5,9 +5,11 @@ namespace Tests\Unit;
 use PHPUnit\Framework\TestCase;
 use Illunminate\Support\Str;
 use Fake\Generator as Faker;
-use app\Models\Task;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Models\Task;
+use app\Models\User;
 
-class UserUnitTest extends TestCase
+class TaskUnitTest extends TestCase
 {
     /**
      * A basic unit test example.
@@ -27,10 +29,18 @@ class UserUnitTest extends TestCase
         // $table->integer('user_id')->unsigned()->index();
         // $table->timestamps();
 
+        User::create([
+            'id' => 1,
+            'name' => 'sarayut',
+            'email' => 'sarayut@gmail.com',
+            'password' => 'sarayut12345'
+        ]);
+
         Task::create([
-            'id' => 10,
+            'id' => 1,
             'description' => "Test text laravel todo list",
             'goal' => '2022-1-1',
+            // 'user_id' => '10',
         ]);
     }
 
