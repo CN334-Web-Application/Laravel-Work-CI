@@ -3,8 +3,6 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Illunminate\Support\Str;
-use Fake\Generator as Faker;
 
 class UserUnitTest extends TestCase
 {
