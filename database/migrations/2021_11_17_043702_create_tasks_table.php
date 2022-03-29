@@ -12,7 +12,7 @@ class CreateTasksTable extends Migration
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
             $table->string('description');
-            $table->date('goal');
+            $table->string('goal');
             $table->integer('user_id')->unsigned()->index();
             $table->timestamps();
         });
