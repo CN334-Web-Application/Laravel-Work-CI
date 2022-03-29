@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use App\Models\Task;
-use app\Models\User;
+use App\Models\User;
 
 class DatabaseCISeeder extends Seeder
 {
@@ -22,31 +22,43 @@ class DatabaseCISeeder extends Seeder
             "id" => 1,
             "name" => "Oh",
             "email" => "oh@gmail.com",
-            "password" => "pass"
+            "password" => "pass",
         ]);
 
         User::create([
             "id" => 2,
             "name" => "Real",
             "email" => "real@gmail.com",
-            "password" => "pass"
+            "password" => "pass",
         ]);
 
         User::create([
             "id" => 3,
             "name" => "Raf",
             "email" => "raf@gmail.com",
-            "password" => "pass"
+            "password" => "pass",
         ]);
 
-        # Create 3 Tasks for everyone
-        for ($x = 1; $x <= 9; $x++) {
-            $id = ceil($x / 3);
+        # Create Tasks for everyone
+        Task::create([
+            "id" => 1,
+            "description" => "des 1",
+            "user_id" => 1,
+            "goal" => '2022-03-29 07:57:50'
+        ]);
 
-            Task::create([
-                "description" => "des $x",
-                "user_id" => "$id"
-            ]);
-        }
+        Task::create([
+            "id" => 2,
+            "description" => "des 2",
+            "user_id" => 2,
+            "goal" => '2022-03-29 07:57:50'
+        ]);
+
+        Task::create([
+            "id" => 3,
+            "description" => "des 3",
+            "user_id" => 3,
+            "goal" =>'2022-03-29 07:57:50'
+        ]);
     }
 }
