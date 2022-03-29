@@ -39,6 +39,8 @@ class TaskUnitTest extends TestCase
             'id' => 1,
             'description' => 'ทดสอบการเพิ่มข้อความด้วยภาษาไทย',
         ]);
+
+        $this -> assertEquals('Test add test to todolist', $task -> description);
     }
 
     public function test_add_goal_date()
@@ -47,6 +49,25 @@ class TaskUnitTest extends TestCase
             'id' => 1,
             'goal_date' => '2022-1-1',
         ]);
+        $this -> assertEquals('2022-1-1', $goal_date -> goal_date);
+    }
+
+    public function test_add__null_goal_date()
+    {
+        $task = new Task([
+            'id' => 1,
+            'goal_date' => null,
+        ]);
+        $this -> assertEquals('2022-1-1', $goal_date -> goal_date);
+    }
+
+    public function test_add_spaceText_goal_date()
+    {
+        $task = new Task([
+            'id' => 1,
+            'goal_date' => '',
+        ]);
+        $this -> assertEquals('2022-1-1', $goal_date -> goal_date);
     }
 
     //Test Schema ทดสอบ รองรับภาษาอังกฤษไหม
