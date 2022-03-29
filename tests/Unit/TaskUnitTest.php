@@ -30,14 +30,14 @@ class TaskUnitTest extends TestCase
         // $table->timestamps();
 
         User::create([
-            'id' => 1,
+            // 'id' => 1,
             'name' => 'sarayut',
             'email' => 'sarayut@gmail.com',
             'password' => 'sarayut12345'
         ]);
 
         Task::create([
-            'id' => 1,
+            // 'id' => 1,
             'description' => "Test text laravel todo list",
             'goal' => '2022-1-1',
             // 'user_id' => '10',
