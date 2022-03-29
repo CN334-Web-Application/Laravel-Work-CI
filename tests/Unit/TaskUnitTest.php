@@ -33,6 +33,9 @@ class TaskUnitTest extends TestCase
             'id' => 1,
             'description' => 'Test add test to todolist',
         ]);
+
+        $this -> assertEquals('Test add test to todolist', $user);
+
     }
 
     //Test Schema ทดสอบ รองรับภาษาไทยไหม
