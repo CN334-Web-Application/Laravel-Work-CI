@@ -3,22 +3,47 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
+use App\Models\Task;
 
 class UserTest extends TestCase
 {
-    /*
-     * A basic unit test example.
-     *
-     * @return void
-     */
-    public function test_example()
-    {
-        $this->assertTrue(true);
+   
+    public function test_create_user()
+    {      
+        $user = User::create([
+            'name' => 'John',
+            'email' => 'john@example.com',
+            'password' => 'password',
+        ]);
+
+        $this->assertEquals('John', $user->name);
+        $this->assertEquals('john@example.com', $user->email);
+        $this->assertEquals('password', $user->password);
     }
 
-    //Test Schema ทดสอบ รองรับภาษาไทยไหม
+    public function test_create_user_thai()
+    {      
+        $user = User::create([
+            'name' => 'จอน',
+            'email' => 'john@example.com',
+            'password' => 'password',
+        ]);
 
-    //Test Schema ทดสอบ รองรับภาษาอังกฤษไหม
+        $this->assertStringContains('ก', $user->name);
+    }
+
+    public function test_user_contain_empty_space()
+    {      
+        $user = User::create([
+            'name' => 'จอน',
+            'email' => 'john@example.com',
+            'password' => 'password',
+        ]);
+
+        $this->assertStringContains(' ', $user->name);
+    }
+
+
 
     //Test Schema ทดสอบ name สามารถใช้อักษรพิเศษได้ไหม
     
@@ -29,8 +54,6 @@ class UserTest extends TestCase
     //Test Schema ทดสอบ name มีตัวเลขได้ไหม
 
     //Test Schema ทดสอบ name ใช้แต่ตัวเลขได้ไหม
-
-    //Test Schema ทดสอบ name ว่างเปล่าได้ไหม
 
     //Test Schema ทดสอบ password ว่าเปล่าได้ไหม
 
