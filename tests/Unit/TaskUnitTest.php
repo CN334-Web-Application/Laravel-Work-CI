@@ -28,11 +28,11 @@ class TaskUnitTest extends TestCase
             'description' => 'Test add test to todolist',
         ]);
 
-        $this -> assertEquals('Test add test to todolist', $task -> description);
+        return assertEquals('Test add test to todolist', $task -> description);
 
     }
 
-    //Test Schema ทดสอบ รองรับภาษาไทยไหม
+    //Test Schema ทดสอบรองรับภาษาไทยไหม
     public function test_add_thai_language()
     {
         $task = new Task([
