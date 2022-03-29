@@ -7,7 +7,7 @@ use Illunminate\Support\Str;
 use Fake\Generator as Faker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use app\Models\User;
-
+// this is comment
 class TestSeeder extends TestCase
 {
     /**
