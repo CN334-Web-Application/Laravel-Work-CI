@@ -31,6 +31,8 @@ class TaskUnitTest extends TestCase
             'id' => 10,
             'description' => "Test text laravel todo list",
             'goal' => '2022-1-1',
+            'user_id' => '10',
+            
         ]);
     }
 
