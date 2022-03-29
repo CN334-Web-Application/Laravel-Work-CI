@@ -49,7 +49,7 @@ class TaskUnitTest extends TestCase
             'id' => 1,
             'goal_date' => '2022-1-1',
         ]);
-        $this -> assertEquals('2022-1-1', $goal_date -> goal_date);
+        $this -> assertEquals('2022-1-1', $task -> goal_date);
     }
 
     public function test_add__null_goal_date()
@@ -58,7 +58,7 @@ class TaskUnitTest extends TestCase
             'id' => 1,
             'goal_date' => null,
         ]);
-        $this -> assertEquals(null, $goal_date -> goal_date);
+        $this -> assertEquals(null, $task -> goal_date);
     }
 
     public function test_add_spaceText_goal_date()
@@ -67,7 +67,7 @@ class TaskUnitTest extends TestCase
             'id' => 1,
             'goal_date' => '',
         ]);
-        $this -> assertEquals('2022-1-1', $goal_date -> goal_date);
+        $this -> assertEquals('2022-1-1', $task -> goal_date);
     }
 
     //Test Schema ทดสอบ รองรับภาษาอังกฤษไหม
