@@ -7,7 +7,8 @@ use Illunminate\Support\Str;
 use Fake\Generator as Faker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\Task;
-use app\Model
+use app\Model;
+
 class TaskUnitTest extends TestCase
 {
     /**
@@ -28,12 +29,12 @@ class TaskUnitTest extends TestCase
         // $table->integer('user_id')->unsigned()->index();
         // $table->timestamps();
 
-        User::create({
+        User::create([
             'id' => 1,
             'name' => 'sarayut',
             'email' => 'sarayut@gmail.com',
             'password' => 'sarayut12345'
-        });
+        ]);
 
         Task::create([
             'id' => 1,
