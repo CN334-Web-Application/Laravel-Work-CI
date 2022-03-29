@@ -56,7 +56,7 @@ jobs:
             php artisan migrate --env=testing
 
       - run:
-          name: "Create Seeder"
+          name: "Run Seeder"
           command: |
             php artisan db:seed --class=DatabaseCISeeder
             php artisan migrate:fresh --seed
