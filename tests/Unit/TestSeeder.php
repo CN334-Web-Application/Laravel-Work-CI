@@ -19,7 +19,9 @@ class TestSeeder extends TestCase
     {
         User::create([
             'name' => "Sara",
-            'id' => 10
+            'id' => 10,
+            'email' => "a@gmail.com",
+            'password' => "pass"
         ]);
     }
 }
