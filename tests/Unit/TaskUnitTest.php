@@ -34,7 +34,7 @@ class TaskUnitTest extends TestCase
             'description' => 'Test add test to todolist',
         ]);
     }
-    
+
     //Test Schema ทดสอบ รองรับภาษาไทยไหม
     public function test_add_thai_language()
     {
@@ -44,7 +44,13 @@ class TaskUnitTest extends TestCase
         ]);
     }
 
-    
+    public function test_add_goal_date()
+    {
+        $task = new Task([
+            'id' => 1,
+            'goal_date' => '2022-1-1',
+        ]);
+    }
 
     //Test Schema ทดสอบ รองรับภาษาอังกฤษไหม
 
