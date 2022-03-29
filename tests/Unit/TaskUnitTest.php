@@ -7,7 +7,7 @@ use Illunminate\Support\Str;
 use Fake\Generator as Faker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\Task;
-class UserUnitTest extends TestCase
+class TaskUnitTest extends TestCase
 {
     /**
      * A basic unit test example.
