@@ -34,8 +34,17 @@ class TaskUnitTest extends TestCase
             'description' => 'Test add test to todolist',
         ]);
     }
-
+    
     //Test Schema ทดสอบ รองรับภาษาไทยไหม
+    public function test_add_thai_language()
+    {
+        $task = new Task([
+            'id' => 1,
+            'description' => 'ทดสอบการเพิ่มข้อความด้วยภาษาไทย',
+        ]);
+    }
+
+    
 
     //Test Schema ทดสอบ รองรับภาษาอังกฤษไหม
 
