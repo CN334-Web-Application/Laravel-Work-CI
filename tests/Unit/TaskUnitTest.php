@@ -23,12 +23,6 @@ class TaskUnitTest extends TestCase
 
     public function test_add_todolist()
     {
-        // $table->id();
-        // $table->string('description');
-        // $table->date('goal');
-        // $table->integer('user_id')->unsigned()->index();
-        // $table->timestamps();
-
         $task = new Task([
             'id' => 1,
             'description' => 'Test add test to todolist',
