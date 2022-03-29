@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-use app\Models\Task;
+use App\Models\Task;
 use app\Models\User;
 
 class DatabaseCISeeder extends Seeder
