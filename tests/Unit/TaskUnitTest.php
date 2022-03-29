@@ -61,14 +61,14 @@ class TaskUnitTest extends TestCase
         $this -> assertEquals(null, $task -> goal_date);
     }
 
-    public function test_add_spaceText_goal_date()
-    {
-        $task = new Task([
-            'id' => 1,
-            'goal_date' => '',
-        ]);
-        $this -> assertEquals('2022-1-1', $task -> goal_date);
-    }
+    // public function test_add_spaceText_goal_date()
+    // {
+    //     $task = new Task([
+    //         'id' => 1,
+    //         'goal_date' => '',
+    //     ]);
+    //     $this -> assertEquals('2022-1-1', $task -> goal_date);
+    // }
 
     //Test Schema ทดสอบ รองรับภาษาอังกฤษไหม
 
