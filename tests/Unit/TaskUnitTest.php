@@ -5,8 +5,8 @@ namespace Tests\Unit;
 use PHPUnit\Framework\TestCase;
 use Illunminate\Support\Str;
 use Fake\Generator as Faker;
-use app\Models\Task;
-
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Models\Task;
 class UserUnitTest extends TestCase
 {
     /**
