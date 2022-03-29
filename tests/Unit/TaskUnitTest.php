@@ -34,7 +34,7 @@ class TaskUnitTest extends TestCase
             'description' => 'Test add test to todolist',
         ]);
 
-        $this -> assertEquals('Test add test to todolist', $user);
+        $this -> assertEquals('Test add test to todolist', $task -> description);
 
     }
 
