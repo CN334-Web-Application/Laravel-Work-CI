@@ -9,9 +9,15 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\Task;
 use App\Models\User;
 
-class AddTaskBATTest extends TestCase
+class AddTaskBAT extends TestCase
 {
-    public function something() {
-        $this->assertTrue(true);
+    public function test_somthing() {
+        $task = new Task([
+            'id' => 1,
+            'description' => 'Add new Task',
+            'goal' => '2021-11-11',
+            
+        ]);
+        $response = assertRedirect(RoutServiceProvider::Home);
     }
 }
