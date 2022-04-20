@@ -12,6 +12,12 @@ use App\Models\User;
 class DeleteTaskBATTest extends TestCase
 {
    public function test_delete_task() {
-        $this->assertTrue(true);
-   }
+      $task = new Task([
+          'id' => 1,
+          'description' => 'Test add test to todolist',
+      ]);
+
+      $this->delete('/tasks/'.$task->id);
+      $this->assertDatabaseMissing('tasks',['id'=> $task->id]);
+  }
 }
