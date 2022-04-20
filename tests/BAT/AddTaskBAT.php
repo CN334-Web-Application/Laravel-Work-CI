@@ -2,7 +2,7 @@
 
 namespace Tests\BAT;
 
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
 use Illunminate\Support\Str;
 use Fake\Generator as Faker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -11,5 +11,7 @@ use App\Models\User;
 
 class AddTaskBAT extends TestCase
 {
-   
+    public function something() {
+        $this->assertTrue(true);
+    }
 }
