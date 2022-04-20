@@ -42,4 +42,7 @@ class AuthenticationTest extends TestCase
 
         $this->assertGuest();
     }
+    //test login with unsign account
+    //test login with email @ username inputs
+    //test login with empty string username
 }

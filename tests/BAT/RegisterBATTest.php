@@ -42,4 +42,10 @@ class RegisterBATTest extends TestCase
         $this->assertAuthenticated();
         $response->assertRedirect(RouteServiceProvider::HOME);
     }
+    //test Register with special characters
+    //test register with no password
+    //test with passwoord less than 8 characters
+    //test password with thai language
+    //test alert with empty input 
+    //test if repeat password is not the same with password
 }
