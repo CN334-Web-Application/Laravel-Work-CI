@@ -2,16 +2,16 @@
 
 namespace Tests\BAT;
 
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
 use Illunminate\Support\Str;
 use Fake\Generator as Faker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\Task;
 use App\Models\User;
 
-class DeleteTaskBAT extends TestCase
+class DeleteTaskBatTest extends TestCase
 {
-   public function something() {
+   public function test_delete_task() {
         $this->assertTrue(true);
    }
 }

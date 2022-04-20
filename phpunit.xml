@@ -11,10 +11,10 @@
         <testsuite name="Integration">
             <directory suffix="Test.php">./tests/Integration</directory>
         </testsuite>
-        <testsuite name="UAT">
+        <testsuite name="Uat">
             <directory suffix="Test.php">./tests/UAT</directory>
         </testsuite>
-        <testsuite name="BAT">
+        <testsuite name="Bat">
             <directory suffix="Test.php">./tests/BAT</directory>
         </testsuite>
     </testsuites>
