@@ -20,4 +20,44 @@ class AddTaskBAT extends TestCase
         ]);
         $this -> assertEquals('Add new Task', $task -> description);
     }
+    public function test_add_thai_language()
+    {
+        $task = new Task([
+            'id' => 1,
+            'description' => 'ทดสอบการเพิ่มข้อความด้วยภาษาไทย',
+            'goal_date' => '2021-11-11',
+        ]);
+
+        $this -> assertEquals('ทดสอบการเพิ่มข้อความด้วยภาษาไทย', $task -> description);
+    }
+
+    public function test_add_goal_date()
+    {
+        $task = new Task([
+            'id' => 1,
+            'description' => 'Add new Task',
+            'goal_date' => '2022-1-1',
+        ]);
+        $this -> assertEquals('2022-1-1', $task -> goal_date);
+    }
+
+    public function test_add_other_language_goal_date()
+    {
+        $task = new Task([
+            'id' => 1,
+            'description' => 'Add new Task',
+            'goal_date' => '2022-1-one',
+        ]);
+        $this -> assertEquals('2022-1-one', $task -> goal_date);
+    }
+
+    public function test_add__null_goal_date()
+    {
+        $task = new Task([
+            'id' => 1,
+            'description' => 'Add new Task',
+            'goal_date' => null,
+        ]);
+        $this -> assertEquals(null, $task -> goal_date);
+    }
 }
