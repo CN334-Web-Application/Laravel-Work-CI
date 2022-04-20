@@ -10,7 +10,7 @@ class UserTest extends TestCase
    
     public function test_create_user()
     {      
-        $user = User::create([
+        $user =  new User([
             'name' => 'John',
             'email' => 'john@example.com',
             'password' => 'password',
@@ -23,7 +23,7 @@ class UserTest extends TestCase
 
     public function test_create_user_thai()
     {      
-        $user = User::create([
+        $user =  new User([
             'name' => 'จอน',
             'email' => 'john@example.com',
             'password' => 'password',
@@ -34,7 +34,7 @@ class UserTest extends TestCase
 
     public function test_user_contain_empty_space()
     {      
-        $user = User::create([
+        $user =  new User([
             'name' => 'จอน',
             'email' => 'john@example.com',
             'password' => 'password',
