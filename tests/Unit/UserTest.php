@@ -24,7 +24,7 @@ class UserTest extends TestCase
     public function test_create_user_thai()
     {      
         $user =  new User([
-            'name' => 'จอน',
+            'name' => 'ก่อนท้องฟ้าจะสดใส',
             'email' => 'john@example.com',
             'password' => 'password',
         ]);
@@ -35,7 +35,7 @@ class UserTest extends TestCase
     public function test_user_contain_empty_space()
     {      
         $user =  new User([
-            'name' => 'จอน',
+            'name' => ' ',
             'email' => 'john@example.com',
             'password' => 'password',
         ]);
