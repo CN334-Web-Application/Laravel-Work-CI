@@ -85,7 +85,7 @@
                     </table>
                 </div>
                 <div>
-                    <a href="/task"><image src="https://www.linkpicture.com/q/add_64px.png" id="button"></a>
+                    <a href="/task" alt="Add Task"><image src="https://www.linkpicture.com/q/add_64px.png" id="button"></a>
                 </div>
             </div>
         </div>
