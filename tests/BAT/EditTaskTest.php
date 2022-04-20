@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\Task;
 use App\Models\User;
 
-class EditTaskBAT extends TestCase
+class EditTaskBATTest
 {
    
 }
