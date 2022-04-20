@@ -29,11 +29,11 @@ class RegisterBATTest extends TestCase
          ->click('Regiter')
          ->seePageIs('/register');
     }
-    
-    public function test_new_users_can_register()
+
+    public function test_new_thai_users_can_register()
     {
         $response = $this->post('/register', [
-            'name' => 'Test User',
+            'name' => 'ธนพล ฟลัวกลา',
             'email' => 'test@example.com',
             'password' => 'password',
             'password_confirmation' => 'password',
