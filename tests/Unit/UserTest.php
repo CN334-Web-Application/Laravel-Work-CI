@@ -32,7 +32,7 @@ class UserTest extends TestCase
         $this->assertStringContainsString('ก', $user->name);
     }
 
-    public function test_user_contain_empty_space()
+    public function test_user_name_contain_empty_space()
     {      
         $user =  new User([
             'name' => ' ',
