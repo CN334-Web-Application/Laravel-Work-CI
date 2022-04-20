@@ -29,7 +29,7 @@ class UserTest extends TestCase
             'password' => 'password',
         ]);
 
-        $this->assertStringContains('ก', $user->name);
+        $this->assertContains('ก', $user->name);
     }
 
     public function test_user_contain_empty_space()
@@ -40,7 +40,7 @@ class UserTest extends TestCase
             'password' => 'password',
         ]);
 
-        $this->assertStringContains(' ', $user->name);
+        $this->assertContains(' ', $user->name);
     }
 
 
