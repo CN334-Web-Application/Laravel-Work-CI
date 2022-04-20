@@ -35,7 +35,7 @@ class UserTest extends TestCase
     public function test_user_name_contain_empty_space()
     {      
         $user =  new User([
-            'name' => ' ',
+            'name' => '',
             'email' => 'john@example.com',
             'password' => 'password',
         ]);
