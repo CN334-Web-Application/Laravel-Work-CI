@@ -14,6 +14,35 @@ class UserTaskIntegrationTest extends TestCase
     public function test_1_user_0_task() {
         $this->assertTrue(true);
     }
+
+    public function test_1_user_1000_tasks() {
+        $this->assertTrue(true);
+    }
+
+    public function test_1_task_2_users() {
+        $this->assertTrue(true);
+    }
+
+    public function test_1_user_2_same_task() {
+        $this->assertTrue(true);
+    }
+
+    public function test_2_user_same_task() {
+        $this->assertTrue(true);
+    }
+
+    public function test_delete_user_and_task() {
+        $this->assertTrue(true);
+    }
+
+    public function test_delete_user() {
+        #Task should removed
+        $this->assertTrue(true);
+    }
+
+    public function test_1_task_0_user() {
+        $this->assertTrue(true);
+    }
 }
 
 //test user 1 have 0 task
